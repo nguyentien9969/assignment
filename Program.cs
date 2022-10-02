@@ -36,7 +36,7 @@ namespace Assignment1
         {
             return  " ( " +FirstName +  " , " + LastName + " ,  " + Age  + " , " + Gender + " , " + DateOfBirth + " , " + BirthPlace + " , " +PhoneNumber + " , " + Age + " , " + IsGraduated + " )";
         }
-        public Member(string firstName, string lastName, string gender, DateTime dateOfBirth, int phoneNumber, string birthPlace, int age, bool isGraduated)
+        public Member(string firstName, string lastName, string gender, DateTime dateOfBirth, int phoneNumber, string birthPlace, bool isGraduated)
         {
             FirstName = firstName ;
             LastName = lastName ;
@@ -44,7 +44,8 @@ namespace Assignment1
             DateOfBirth = dateOfBirth ;
             PhoneNumber = phoneNumber ;
             BirthPlace = birthPlace ;
-            Age = age ;
+            var today = DateTime.Today;
+            Age = today.Year - dateOfBirth.Year ;
             IsGraduated = isGraduated ;
         }   
         // public string GetGender (string Gender){
@@ -69,13 +70,13 @@ namespace Assignment1
         static void Main(string[] args)
         {
             List<Member> MemList = new List<Member>();
-            MemList.Add(new Member("Tien", "Nguyen", "male", new DateTime(2001, 10, 5), 0827844271, "BacGiang", 21, false));
-            MemList.Add(new Member("Hung", "Pham", "male", new DateTime(1999, 10, 5), 0804085622, "NinhBinh", 23, false));
-            MemList.Add(new Member("Hieu", "Luu", "male", new DateTime(1998, 10, 5), 0804060801, "CaMau", 23, false));
-            MemList.Add(new Member("My", "Trinh", "female", new DateTime(2000, 10, 5), 0824040681, "Hanoi", 22, false));
-            MemList.Add(new Member("Trung", "Luu", "male", new DateTime(2000, 10, 5), 0804743821, "Hanoi", 22, false));
-            MemList.Add(new Member("Ha", "Nguyen", "female", new DateTime(1998, 10, 5), 0834467801, "Hue", 23, false));
-            MemList.Add(new Member("Meo", "Con", "uknown", new DateTime(2020, 10, 5), 020, "a", 2, false));
+            MemList.Add(new Member("Tien", "Nguyen", "male", new DateTime(1999, 10, 5), 0827844271, "BacGiang", false));
+            MemList.Add(new Member("Hung", "Pham", "male", new DateTime(1999, 10, 5), 0804085622, "NinhBinh", false));
+            MemList.Add(new Member("Hieu", "Luu", "male", new DateTime(1998, 10, 5), 0804060801, "CaMau", false));
+            MemList.Add(new Member("My", "Trinh", "female", new DateTime(2000, 10, 5), 0824040681, "Hanoi", false));
+            MemList.Add(new Member("Trung", "Luu", "male", new DateTime(2000, 10, 5), 0804743821, "Hanoi", false));
+            MemList.Add(new Member("Ha", "Nguyen", "female", new DateTime(1998, 10, 5), 0834467801, "Hue", false));
+            MemList.Add(new Member("Meo", "Con", "uknown", new DateTime(2020, 10, 5), 020, "a", false));
             
 
             // 1. Return a list of members who isMale
@@ -92,22 +93,27 @@ namespace Assignment1
             Console.WriteLine(("------------------------------------------------------------------------------------------------------------------------------------------------"));
 
             //2. Return the oldest one based on “Age”
-            //chưa làm được 2 ý (firstperson and datetime)
+            
             Console.WriteLine("2. Return the oldest one based on “Age”");
            
-            var oldestMemberAge = new Member() ;
+            int oldestMemberAge = 0;
 
-            for (int i = 0; i < 7; i++)
+            foreach (Member mem in MemList)
             {
-                for (int j = 1; j < 7; j++)
+                if (mem.Age > oldestMemberAge)
                 {
-                    if (MemList[i].Age > MemList[j].Age)
-                    {
-                       oldestMemberAge = MemList[i] ;
-                    }
+                    oldestMemberAge = mem.Age ;
                 }
-            }          
-            Console.WriteLine(oldestMemberAge.ToString());
+            }
+
+            foreach (Member mem in MemList)
+            {
+                if (mem.Age == oldestMemberAge)
+                {
+                    Console.WriteLine(mem.ToString());
+                    break;
+                }
+            }
                    
             Console.WriteLine(("-----------------------------------------------------------------------------------------------------------------------------------------------"));
 
