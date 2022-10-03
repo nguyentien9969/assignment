@@ -58,11 +58,11 @@ namespace Assignment1
         {
             if (string.Equals(isGraduated,"true",StringComparison.OrdinalIgnoreCase))
             {
-                return "DA TOT NGHIEP";
+                return "ĐÃ TỐT NGHIỆP";
             }
             else
             {
-                return "CHUA TOT NGHIEP";
+                return "CHƯA TỐT NGHIỆP";
             }
         }
 
@@ -126,8 +126,6 @@ namespace Assignment1
             
             int option = System.Int32.Parse(Console.ReadLine());
             
-            do
-            {
                 switch (option)
                 {
                     case 1:
@@ -140,6 +138,7 @@ namespace Assignment1
                         }
                     break;
                     case 2:
+                    
                        foreach (var mem in memList)
                         {
                             if(mem.DateOfBirth.Year > 2000)
@@ -147,7 +146,8 @@ namespace Assignment1
                                 Console.WriteLine(mem.Info + " was born before 2000 .");
                             }
                         }
-                    break;
+                        break;
+                  
                     case 3:
                        foreach (var mem in memList)
                         {
@@ -156,11 +156,8 @@ namespace Assignment1
                                 Console.WriteLine(mem.Info + " was born after 2000 .");
                             }
                         }
-                    break;
+                    break;  
                 }
-            }   while (option >1 && option <3);
-
-            Console.ReadKey();
        }
 
        public void GetfirstBorn(List<Member> memList)
