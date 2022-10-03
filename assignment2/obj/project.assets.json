@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\rookie.csproj",
-      "projectName": "rookie",
-      "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\rookie.csproj",
+      "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment2\\assignment2.csproj",
+      "projectName": "assignment2",
+      "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment2\\assignment2.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\obj\\",
+      "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",

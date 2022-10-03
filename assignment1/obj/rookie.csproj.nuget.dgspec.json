@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\rookie.csproj": {}
+    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment1\\rookie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\rookie.csproj": {
+    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment1\\rookie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\rookie.csproj",
+        "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment1\\rookie.csproj",
         "projectName": "rookie",
-        "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\rookie.csproj",
+        "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment1\\rookie.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\obj\\",
+        "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Rookiesbatch6\\assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
