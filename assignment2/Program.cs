@@ -1,13 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Text;
-namespace assignment2
+
+namespace Assignment2
 {
-    public class Program
+    
+    class Program
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
         {
             List<Member> memList = new List<Member>();
             memList.Add(new Member("Tien", "Nguyen", "male", new DateTime(1999, 10, 5), 0827844271, "BacGiang", "True"));

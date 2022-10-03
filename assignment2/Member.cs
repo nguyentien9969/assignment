@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace assignment2
+namespace Assignment2
 {
-     public class Member
+    public class Member
     {
 
         private string _FirstName;
@@ -72,14 +70,13 @@ namespace assignment2
         {
 
             Console.WriteLine("1. Return a list of members who is Male");
-                
-                var ketqua = from mem1 in memList
-                            where mem1.Gender.Contains("male")
-                            select mem1;
 
-                foreach (var mem1 in ketqua)
+                foreach (Member mem in memList)
                 {
-                    Console.WriteLine(mem1.FullName);
+                    if (mem.Gender == "male")
+                    {
+                        Console.WriteLine(mem.Info);
+                    }
                 }
         }
        
@@ -200,4 +197,5 @@ namespace assignment2
         //     }
         // }
     }
+
 }
