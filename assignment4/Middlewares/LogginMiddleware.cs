@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Text;
 
 namespace assignment4.Middlewares
@@ -8,25 +9,27 @@ namespace assignment4.Middlewares
         public LogginMiddleware(RequestDelegate next) => _next = next;
         public async Task Invoke(HttpContext context)
         {
-            
-            var request = context.Request ;
+            var request = context.Request;
             var sb = new StringBuilder();
+
+            StringBuilder sbRespone = new StringBuilder();
+
             var scheme = request.Scheme;
             sb.AppendLine("scheme :" + scheme);
-
             var host = (request.Host.HasValue ? request.Host.Value : "no host");
             sb.AppendLine("host :" + host);
-
             var path = request.Path.ToString();
             sb.AppendLine("path" + path);
-
-            var listquery = request.Query.Select((header) => $"{header.Key}: {header.Value}");
-            var queryhtml = string.Join("", listquery);
-            sb.AppendLine("Các Query" + queryhtml);
-
-            
+            var query = request.QueryString;
+            sb.AppendLine("Các Query" + query);
+            var body = request.Body;
+            sb.AppendLine("Body" + body);
             string info = sb.ToString();
-            await context.Response.WriteAsync(text:info + sb.AppendLine(request.Method) );
+
+            Debug.Write(info);
+            File.WriteAllText("D:\\Local.txt", info);
+            LogginHelper.WriteToFileByStream("D:\\","Local.txt", info);
+            await _next(context);
         }
     }
 }

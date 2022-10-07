@@ -23,7 +23,6 @@ namespace Assignment2
 
         static void GetOldestMember(List<Member> memList)
         {
-
             Console.WriteLine("2. Return the oldest one based on “Age”");
 
             var data = from item in memList
@@ -92,7 +91,7 @@ namespace Assignment2
             }
         }
 
-        static void GetfirstBorn(List<Member> memList)
+        static void GetFirstBorn(List<Member> memList)
         {
             Console.WriteLine("5. Return the first person who was born in Ha Noi.");
 
@@ -143,7 +142,7 @@ namespace Assignment2
                     break;
 
                 case 5:
-                    GetfirstBorn(memList);
+                    GetFirstBorn(memList);
                     break;
 
                 default:
