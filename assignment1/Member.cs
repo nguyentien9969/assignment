@@ -21,7 +21,16 @@ namespace Assignment1
         public int PhoneNumber { get => _phoneNumber; set => _phoneNumber = value; }
         public DateTime DateOfBirth { get => _dateOfBirth; set => _dateOfBirth = value; }
         public string BirthPlace { get => _birthPlace; set => _birthPlace = value; }
-        public uint Age { get => _age; set => _age = value; }
+        public uint Age
+        {
+            get
+            {
+                uint today = (uint)DateTime.Today.Year;
+                return today - (uint)DateOfBirth.Year;
+            }
+            set => _age = value;
+        }
+
         public string IsGraduated { get => _isGraduated; set => _isGraduated = value; }
 
         public Member()
@@ -37,13 +46,12 @@ namespace Assignment1
             DateOfBirth = dateOfBirth;
             PhoneNumber = phoneNumber;
             BirthPlace = birthPlace;
-            IsGraduated = this.GetIsGraduated(isGraduated);
-            Age = this.GetAge();
+            IsGraduated = isGraduated;
         }
 
         public string Info
         {
-            get => " ( " + FirstName + " , " + LastName + " ,  " + Age + " , " + Gender + " , " + DateOfBirth +
+            get => " ( " + FirstName + " , " + LastName + " , " + Gender + " , " + DateOfBirth +
              " , " + BirthPlace + " , " + PhoneNumber + " , " + Age + " , " + IsGraduated + " )";
         }
 

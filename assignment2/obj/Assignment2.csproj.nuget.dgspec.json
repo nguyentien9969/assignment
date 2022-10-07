@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignment2\\Assignment2.csproj": {}
+    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\assignment2\\Assignment2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignment2\\Assignment2.csproj": {
+    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\assignment2\\Assignment2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignment2\\Assignment2.csproj",
+        "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\assignment2\\Assignment2.csproj",
         "projectName": "Assignment2",
-        "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignment2\\Assignment2.csproj",
+        "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\assignment2\\Assignment2.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignment2\\obj\\",
+        "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\assignment2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
