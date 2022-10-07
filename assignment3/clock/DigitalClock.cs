@@ -13,6 +13,4 @@ namespace asss5
             Console.WriteLine("{0}:{1}:{2}", clockInfoEventArgs._hour, clockInfoEventArgs._minute, clockInfoEventArgs._second);
         }
     }
-
-        
 }

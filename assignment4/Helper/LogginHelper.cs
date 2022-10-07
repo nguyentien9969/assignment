@@ -1,4 +1,4 @@
-namespace assignment4
+namespace assignment4.Helper
 {
     public static class LogginHelper
     {
