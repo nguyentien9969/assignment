@@ -1,0 +1,15 @@
+C:\Users\Alienware M15\Desktop\MVCS\Service\bin\Debug\net6.0\Service.deps.json
+C:\Users\Alienware M15\Desktop\MVCS\Service\bin\Debug\net6.0\Service.dll
+C:\Users\Alienware M15\Desktop\MVCS\Service\bin\Debug\net6.0\Service.pdb
+C:\Users\Alienware M15\Desktop\MVCS\Service\bin\Debug\net6.0\dataAccess.dll
+C:\Users\Alienware M15\Desktop\MVCS\Service\bin\Debug\net6.0\dataAccess.pdb
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.dll
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\refint\Service.dll
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\Service.pdb
+C:\Users\Alienware M15\Desktop\MVCS\Service\obj\Debug\net6.0\ref\Service.dll

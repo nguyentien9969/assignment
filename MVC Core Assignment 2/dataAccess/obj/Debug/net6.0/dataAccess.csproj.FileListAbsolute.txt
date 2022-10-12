@@ -1,0 +1,12 @@
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\bin\Debug\net6.0\dataAccess.deps.json
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\bin\Debug\net6.0\dataAccess.dll
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\bin\Debug\net6.0\dataAccess.pdb
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\dataAccess.csproj.AssemblyReference.cache
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\dataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\dataAccess.AssemblyInfoInputs.cache
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\dataAccess.AssemblyInfo.cs
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\dataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\dataAccess.dll
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\refint\dataAccess.dll
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\dataAccess.pdb
+C:\Users\Alienware M15\Desktop\MVCS\dataAccess\obj\Debug\net6.0\ref\dataAccess.dll
