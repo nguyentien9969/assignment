@@ -1,0 +1,55 @@
+@model MemberDetailModel
+@{
+    var value = ViewData["Index"]?.ToString() ?? "";
+    var index = !string.IsNullOrEmpty(value) ? int.Parse(value) : 0;
+}
+
+<h1 class="display=4 text-center"> Member Info</h1>
+<div class="row">
+    <form asp-controller="Rookie" asp-action="Update" asp-route-index="@index" method="post" class="col-12 offset-2">
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <label class="form-control">@Model.LastName</label>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <label class="form-control">@Model.FirstName</label>
+        </div>
+        <div class="form-group">
+            <label asp-for="PhoneNumber"></label>
+            <label class="form-control">@Model.PhoneNumber</label>
+        </div>
+        <div class="form-group">
+            <label asp-for="BirthPlace"></label>
+            <label class="form-control">@Model.BirthPlace</label>
+        </div>
+        <a class="btn btn-secondary" asp-controller="Rookie" asp-action="Index">Back to list</a>
+        <a class="btn btn-danger" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Delete</a>
+    </form>
+</div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLable" arira-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form asp-controller="Rookie" asp-action="DeleteAndRedirectToResultView" asp-route-index="@index" method="post"
+            class="">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLable">Delete Confirm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

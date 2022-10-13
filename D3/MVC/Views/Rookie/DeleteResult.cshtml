@@ -1,0 +1,7 @@
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Tilte"] = "DeleteResult";
+    var DeletedMemberName = HttpContextAccessor?.HttpContext?.Session.GetString("DeletedMemberName") ?? "[unknown Member]";
+}
+
+<h1 class="display=4 text-center text-info"> Member @DeletedMemberName was removed from List successfully</h1>
