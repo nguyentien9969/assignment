@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alienware M15\\.nuget\\packages\\": {}
+    "C:\\Users\\nguye\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alienware M15\\Desktop\\D3\\mvc\\mvc.csproj",
+      "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\D3\\mvc\\mvc.csproj",
       "projectName": "mvc",
-      "projectPath": "C:\\Users\\Alienware M15\\Desktop\\D3\\mvc\\mvc.csproj",
-      "packagesPath": "C:\\Users\\Alienware M15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alienware M15\\Desktop\\D3\\mvc\\obj\\",
+      "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\D3\\mvc\\mvc.csproj",
+      "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\D3\\mvc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alienware M15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
