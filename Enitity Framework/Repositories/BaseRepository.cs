@@ -8,7 +8,7 @@ namespace Enitity_Framework.Repositories
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity<int>
     {
         private readonly DbSet<T> _dbSet;
-       private readonly StudentContext _context;
+        private readonly StudentContext _context;
 
         public BaseRepository(StudentContext context)
         {
