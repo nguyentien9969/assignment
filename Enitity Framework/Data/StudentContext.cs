@@ -9,6 +9,16 @@ namespace Enitity_Framework.Data
         : base(options)
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+                    // modelBuilder.Entity<Product>()
+                    //                     .HasData(new Product
+                    //                     {
+
+                    //                     });
+                    
+        }
         public DbSet<Student> Students { get; set; } = null!;
     }
 }
