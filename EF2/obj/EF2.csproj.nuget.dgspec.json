@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Alienware M15\\Desktop\\EF2\\EF2.csproj": {}
+    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\EF2\\EF2.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Alienware M15\\Desktop\\EF2\\EF2.csproj": {
+    "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\EF2\\EF2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Alienware M15\\Desktop\\EF2\\EF2.csproj",
+        "projectUniqueName": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\EF2\\EF2.csproj",
         "projectName": "EF2",
-        "projectPath": "c:\\Users\\Alienware M15\\Desktop\\EF2\\EF2.csproj",
-        "packagesPath": "C:\\Users\\Alienware M15\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Alienware M15\\Desktop\\EF2\\obj\\",
+        "projectPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\EF2\\EF2.csproj",
+        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nguye\\OneDrive\\Máy tính\\Assignmentt\\EF2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alienware M15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

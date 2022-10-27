@@ -1,0 +1,37 @@
+@model IEnumerable<MemberModel>
+
+<div class="text-center">
+  <h1 class="display=4">Rookie List</h1>
+  <div class="text-left mt-5 mb-3">
+    <a class="btn btn-primary" role="button" asp-controller="Rookie" asp-action="Create">Create new member</a>
+  </div>
+  <table class="table table-dark">
+    <thead>
+      <tr >
+        <th scope="col" class="text-center">#</th>
+        <th scope="col" class="text-center">Full Name</th>
+        <th scope="col" class="text-center"> Gender</th>
+        <th scope="col" class="text-center">BirthPlace</th>
+        <th scope="col" class="text-center">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var item in Model)
+      {
+        <tr>
+          <th scope="row" class="text-center">@item.Id</th>
+          <td><a class="text-center" asp-controller="Rookie" asp-action="Detail" asp-route-index="@item.Id">@item.FirstName </a></td>
+          <td class="text-center">@item.Gender</td>
+          <td class="text-center">@item.BirthPlace</td>
+          <td>
+            <a type="button" class="btn btn-Info btn-sm mr-2" role="button" asp-controller="Rookie"
+            asp-action="Edit" asp-route-index="@item.Id">Edit button</a>
+            <a type="button" class="btn btn-danger btn-sm" asp-controller="Rookie" asp-action="Delete" 
+            asp-route-index="@item.Id" role="button">Delete button</a>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
+
