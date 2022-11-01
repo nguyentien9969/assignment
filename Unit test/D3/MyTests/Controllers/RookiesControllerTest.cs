@@ -83,7 +83,7 @@ namespace MyTests.Controllers
 
             Assert.IsInstanceOf<RedirectToActionResult>(result);
             var redirectToActionResult = (RedirectToActionResult)result;
-            Assert.Null(redirectToActionResult.ControllerName);
+            // Assert.Null(redirectToActionResult.ControllerName);
             Assert.AreEqual("Index", redirectToActionResult.ActionName);
         }
 
@@ -178,6 +178,8 @@ namespace MyTests.Controllers
             var result = _sut.Create(model: null);
 
             Assert.IsInstanceOf<ViewResult>(result);
+            var viewResult = (ViewResult)result;
+            assert.AreEqual(MemberModel,viewResult.ViewData.model);
         }
 
         [Test]
