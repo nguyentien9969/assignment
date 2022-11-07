@@ -12,13 +12,9 @@ namespace Enitity_Framework.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-                    // modelBuilder.Entity<Product>()
-                    //                     .HasData(new Product
-                    //                     {
-
-                    //                     });
-                    
+                       
         }
         public DbSet<Student> Students { get; set; } = null!;
+        
     }
 }
