@@ -1,26 +1,14 @@
 ﻿using Common.Enums;
 
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
 namespace Test.Data.Entities
 {
-    public class Person
+    public class Person : BaseEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid PersonId { get; set; }
-
-        public string Name { get; set; }
-
-        public int? Age { get; set; }
-
-        public DateTime? Dob { get; set; }
-
-        public GenderEnum? Gender { get; set; }
-
-        public string? EmailAddress { get; set; }
-
-        public string? LicenseId { get; set; }
+        public string Username { get; set; } = null!;
+        public string Password { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public Role Role { get; set; }
+        public ICollection<BookBorrowRequest> BookRequestedBorrowRequests { get; set; } = null!;
+        public ICollection<BookBorrowRequest> BookApprovedBorrowRequests { get; set; } = null!;
     }
 }
