@@ -1,7 +1,9 @@
 ﻿using Common.Enums;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Test.Data.Entities
 {
+    [Table("Person")]
     public class Person : BaseEntity
     {
         public string Username { get; set; } = null!;

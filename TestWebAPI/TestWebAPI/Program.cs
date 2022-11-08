@@ -1,19 +1,20 @@
 
-using Test.Data;
+
 using Microsoft.EntityFrameworkCore;
 
+using Test.Data;
 
-using TestWebAPI.Services;
 var builder = WebApplication.CreateBuilder(args);
 
-
+// Add services to the container.
 
 builder.Services.AddControllers();
 var configuration = builder.Configuration;
-builder.Services.AddDbContext<BookContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DBConnString")));// Add services to the container.
+builder.Services.AddDbContext<LibraryContext>(opt =>
+{
+    opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+});
 
-builder.Services.AddTransient<ITestService, TestService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

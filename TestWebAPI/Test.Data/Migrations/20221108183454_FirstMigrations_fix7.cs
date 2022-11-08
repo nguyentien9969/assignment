@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Test.Data.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class FirstMigrations_fix7 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -168,9 +168,9 @@ namespace Test.Data.Migrations
                 columns: new[] { "Id", "ApproveAt", "AprovedBy", "RequestAt", "RequestStatus", "RequestedBy" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1171), 0, 1 },
-                    { 2, new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1183), 3, new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1182), 1, 1 },
-                    { 3, new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1184), 4, new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1184), 2, 2 }
+                    { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), null, new DateTime(2022, 11, 9, 1, 34, 54, 27, DateTimeKind.Local).AddTicks(8316), 0, 1 },
+                    { 2, new DateTime(2022, 11, 9, 1, 34, 54, 27, DateTimeKind.Local).AddTicks(8326), 3, new DateTime(2022, 11, 9, 1, 34, 54, 27, DateTimeKind.Local).AddTicks(8325), 1, 1 },
+                    { 3, new DateTime(2022, 11, 9, 1, 34, 54, 27, DateTimeKind.Local).AddTicks(8327), 4, new DateTime(2022, 11, 9, 1, 34, 54, 27, DateTimeKind.Local).AddTicks(8327), 2, 2 }
                 });
 
             migrationBuilder.InsertData(
@@ -191,17 +191,12 @@ namespace Test.Data.Migrations
             migrationBuilder.InsertData(
                 table: "BookBorrowRequestDetails",
                 columns: new[] { "BookBorrowRequestsId", "BooksId" },
-                values: new object[,]
-                {
-                    { 1, 1 },
-                    { 1, 2 },
-                    { 2, 3 },
-                    { 2, 4 },
-                    { 2, 5 },
-                    { 2, 6 },
-                    { 2, 7 },
-                    { 3, 1 }
-                });
+                values: new object[] { 1, 1 });
+
+            migrationBuilder.InsertData(
+                table: "BookBorrowRequestDetails",
+                columns: new[] { "BookBorrowRequestsId", "BooksId" },
+                values: new object[] { 1, 2 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookBorrowRequest_AprovedBy",

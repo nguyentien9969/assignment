@@ -46,36 +46,6 @@ namespace Test.Data.Migrations
                         {
                             BookBorrowRequestsId = 1,
                             BooksId = 2
-                        },
-                        new
-                        {
-                            BookBorrowRequestsId = 2,
-                            BooksId = 3
-                        },
-                        new
-                        {
-                            BookBorrowRequestsId = 2,
-                            BooksId = 4
-                        },
-                        new
-                        {
-                            BookBorrowRequestsId = 2,
-                            BooksId = 5
-                        },
-                        new
-                        {
-                            BookBorrowRequestsId = 2,
-                            BooksId = 6
-                        },
-                        new
-                        {
-                            BookBorrowRequestsId = 2,
-                            BooksId = 7
-                        },
-                        new
-                        {
-                            BookBorrowRequestsId = 3,
-                            BooksId = 1
                         });
                 });
 
@@ -224,25 +194,25 @@ namespace Test.Data.Migrations
                         {
                             Id = 1,
                             ApproveAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            RequestAt = new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1171),
+                            RequestAt = new DateTime(2022, 11, 9, 1, 36, 17, 882, DateTimeKind.Local).AddTicks(7845),
                             RequestStatus = 0,
                             RequestedBy = 1
                         },
                         new
                         {
                             Id = 2,
-                            ApproveAt = new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1183),
+                            ApproveAt = new DateTime(2022, 11, 9, 1, 36, 17, 882, DateTimeKind.Local).AddTicks(7854),
                             AprovedBy = 3,
-                            RequestAt = new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1182),
+                            RequestAt = new DateTime(2022, 11, 9, 1, 36, 17, 882, DateTimeKind.Local).AddTicks(7853),
                             RequestStatus = 1,
                             RequestedBy = 1
                         },
                         new
                         {
                             Id = 3,
-                            ApproveAt = new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1184),
+                            ApproveAt = new DateTime(2022, 11, 9, 1, 36, 17, 882, DateTimeKind.Local).AddTicks(7856),
                             AprovedBy = 4,
-                            RequestAt = new DateTime(2022, 11, 9, 0, 24, 17, 864, DateTimeKind.Local).AddTicks(1184),
+                            RequestAt = new DateTime(2022, 11, 9, 1, 36, 17, 882, DateTimeKind.Local).AddTicks(7855),
                             RequestStatus = 2,
                             RequestedBy = 2
                         });

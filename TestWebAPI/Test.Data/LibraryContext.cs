@@ -33,19 +33,6 @@ public class LibraryContext : DbContext
             .WithMany(c => c.Books)
             .UsingEntity(b => b.ToTable("BookCategories"));
 
-        builder.Entity<Book>()
-            .HasMany(b => b.BookBorrowRequests)
-            .WithMany(bc => bc.Books)
-            .UsingEntity(b => b.ToTable("BookBorrowRequestDetails").HasData(
-                new { BooksId = 1, BookBorrowRequestsId = 1 },
-                new { BooksId = 2, BookBorrowRequestsId = 1 },
-                new { BooksId = 3, BookBorrowRequestsId = 2 },
-                new { BooksId = 4, BookBorrowRequestsId = 2 },
-                new { BooksId = 5, BookBorrowRequestsId = 2 },
-                new { BooksId = 6, BookBorrowRequestsId = 2 },
-                new { BooksId = 7, BookBorrowRequestsId = 2 },
-                new { BooksId = 1, BookBorrowRequestsId = 3 }
-                ));
 
 
         builder.Entity<Category>().HasData(
@@ -107,5 +94,13 @@ public class LibraryContext : DbContext
             }
         );
 
+        builder.Entity<Book>()
+            .HasMany(b => b.BookBorrowRequests)
+            .WithMany(bc => bc.Books)
+            .UsingEntity(b => b.ToTable("BookBorrowRequestDetails").HasData(
+                new { BooksId = 1, BookBorrowRequestsId = 1 },
+                new { BooksId = 2, BookBorrowRequestsId = 1 }
+               
+                ));
     }
 }
