@@ -2,9 +2,9 @@
 
 namespace TestWebAPI.DTOS.Book
 {
-    public class AddBookBorrowRequest
+    public class GetBookBorrowRequestRequest
     {
-        public List<int> BooksId { get; set; }
+        public int id { get; set; }
         public PersonModel Requester { get; set; }
     }
 }

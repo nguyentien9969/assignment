@@ -13,7 +13,6 @@ public class LibraryContext : DbContext
 
     public DbSet<Book> Books { get; set; }
     public DbSet<Category> Categories { get; set; }
-
     public DbSet<BookBorrowRequest> BookBorrowRequest { get; set; }
     public DbSet<Person> Persons { get; set; }
 
@@ -33,7 +32,7 @@ public class LibraryContext : DbContext
             .WithMany(c => c.Books)
             .UsingEntity(b => b.ToTable("BookCategories"));
 
-
+        
 
         builder.Entity<Category>().HasData(
             new Category { Id = 1, Name = "Comic" },

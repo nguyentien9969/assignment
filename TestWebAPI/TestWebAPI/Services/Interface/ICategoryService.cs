@@ -1,14 +1,13 @@
 ﻿using TestWebAPI.DTOS.Book;
-using TestWebAPI.DTOS.Category;
 
 namespace TestWebAPI.Services.Interface
 {
     public interface ICategoryService
     {
-        AddCategoryRespone AddBook(AddCategoryRequest request);
-        GetCategoryRespone GetBook(int id);
-        IEnumerable<GetCategoryRespone> GetAllBook();
-        UpdateCategoryRespone UpdateBook(UpdateCategoryRequest request);
-        bool DeleteBook(int id);
+        AddCategoryRespone Add(AddCategoryRequest request);
+        GetCategoryRespone GetOne(int id);
+        IEnumerable<GetCategoryRespone> GetAll();
+        UpdateCategoryRespone Update(UpdateCategoryRequest request);
+        bool Delete(int id);
     }
 }

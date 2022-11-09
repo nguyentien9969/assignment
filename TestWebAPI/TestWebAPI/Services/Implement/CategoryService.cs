@@ -1,5 +1,4 @@
 ﻿using Test.Data.Entities;
-using Test.Data.Repositories.Implement;
 using Test.Data.Repositories.Interface;
 using TestWebAPI.DTOS.Book;
 using TestWebAPI.Services.Interface;
@@ -14,7 +13,7 @@ namespace TestWebAPI.Services.Implement
             _categoryRepository = categoryRepository;
         }
 
-        public AddCategoryRespone AddBook(AddCategoryRequest request)
+        public AddCategoryRespone Add(AddCategoryRequest request)
         {
             using var transaction = _categoryRepository.DatabaseTransaction();
             try 
@@ -45,7 +44,7 @@ namespace TestWebAPI.Services.Implement
             }
         }
 
-        public bool DeleteBook(int id)
+        public bool Delete(int id)
         {
             using var transaction = _categoryRepository.DatabaseTransaction();
             try
@@ -67,7 +66,7 @@ namespace TestWebAPI.Services.Implement
             }
         }
 
-        public IEnumerable<GetCategoryRespone> GetAllBook()
+        public IEnumerable<GetCategoryRespone> GetAll()
         {
             using (var transaction = _categoryRepository.DatabaseTransaction())
 
@@ -92,7 +91,7 @@ namespace TestWebAPI.Services.Implement
                 }
         }
 
-        public GetCategoryRespone GetBook(int id)
+        public GetCategoryRespone GetOne(int id)
         {
             using var transaction = _categoryRepository.DatabaseTransaction();
             try
@@ -116,7 +115,7 @@ namespace TestWebAPI.Services.Implement
             }
         }
 
-        public UpdateCategoryRespone UpdateBook(UpdateCategoryRequest request)
+        public UpdateCategoryRespone Update(UpdateCategoryRequest request)
         {
             using var transaction = _categoryRepository.DatabaseTransaction();
             try
